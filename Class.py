@@ -1,3 +1,16 @@
+from tkinter import Tk, Entry, Button, Label, StringVar
+
+window = Tk()
+window.geometry('600x250')
+window.title('Hausa Dictionary')
+
+entry_text = Entry(window)
+entry_text.pack()
+
+result = StringVar()
+result_label = Label(window, textvariable=result)
+result_label.pack()
+
 yoruba_dictionary = {
 
 "God":'Oluwa',
