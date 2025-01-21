@@ -44,3 +44,16 @@ yoruba_dictionary = {
 "Clock":'Ago',
 
 }
+
+def search(word):
+    if word in hausa_dict:
+        result.set(hausa_dict[word])
+        print(hausa_dict[word])
+    else:
+        result.set('invalid')
+        print('invalid')
+
+search_btn = Button(window, text="Search", command=lambda: search(entry_text.get()))
+search_btn.pack()
+
+window.mainloop()
