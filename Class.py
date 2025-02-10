@@ -2,7 +2,7 @@ from tkinter import Tk, Entry, Button, Label, StringVar
 
 window = Tk()
 window.geometry('600x250')
-window.title('Hausa Dictionary')
+window.title('Yoruba Dictionary')
 
 entry_text = Entry(window)
 entry_text.pack()
@@ -46,9 +46,9 @@ yoruba_dictionary = {
 }
 
 def search(word):
-    if word in hausa_dict:
-        result.set(hausa_dict[word])
-        print(hausa_dict[word])
+    if word in yoruba_dictionary:
+        result.set(yoruba_dictionary[word])
+        print(yoruba_dictionary[word])
     else:
         result.set('invalid')
         print('invalid')
